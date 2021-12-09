@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume: Sanjin Prelić</title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    
     <!--
         Name: Sanjin Prelić
         Course: CS412
-        Assignment: Project 1 HTML
-        Due Date: 22/10/2021
-        Purpose: Project 1
+        Assignment: Project 3
+        Due Date: 09/12/2021
+        Purpose: Project 3
     -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
 </head>
+
 <body>
-        <img src="ogrimg.jpg" alt="My picture"><br>
-        <h2>My resume</h2>
+    <button type="button" id="en" onclick="changeLanguage(this.id)"> Bosnian language</button>
+                    <button type="button" id="ba" onclick="changeLanguage(this.id)"> English Language</button>
+                    
+    
+    <div class="slika">
+        
+        <img src="ogrimg.jpg" alt="My picture"></div>
+        <h2>Welcome to My resume</h2>
         <div class="nav">
             
             <ul>
@@ -28,25 +39,46 @@
         </ul>
     <section id="bio">
     <h1>Bio</h1>
-    <h3>My name is Sanjin Prelić, and I am currently studying Computer Science at The Internation University of Sarajevo.I finished the Cambridge International High School Math Curriculum, and am currently on my 5th semester on IUS. I have been interested in computer science ever since high school and technology in general has been one of my biggest passions in life since I was a small child fascinated by any sort of machines around me.</h3>
+    <h3 id="mybio">My name is Sanjin Prelić, and I am currently studying Computer Science at The Internation University of Sarajevo.I finished the Cambridge International High School Math Curriculum, and am currently on my 5th semester on IUS. I have been interested in computer science ever since high school and technology in general has been one of my biggest passions in life since I was a small child fascinated by any sort of machines around me.</h3>
     
 </section>
 <section id="education">
     <h1>Education</h1>
    <h3>
        <ol>
+        <div class="tab">
+            <button class="tablinks" onmouseover="openTab(event, 'Primary School')">Primary School</button>
+            <button class="tablinks" onmouseover="openTab(event, 'High school')">High school</button>
+            <button class="tablinks" onmouseover="openTab(event, 'Bachelor')">Bachelor</button>
+           
+          </div>
+          
+          <div id="Primary School" class="tabcontent">
+            <h4>Primary School</h4>
+            <p>Grbavica 2</p>
+          </div>
+          
+          <div id="High school" class="tabcontent">
+            <h4>High school</h4>
+            <p>Prva Bošnjačka Gimnazija(PBGS)</p> 
+          </div>
+          
+          <div id="Bachelor" class="tabcontent">
+            <h4>Bachelor</h4>
+            <p>The International University of Sarajevo</p>
+          </div>
+          
+          
+          <div class="clearfix"></div>
         
         
-        <li><strong>Primary School</strong>: Grbavica II</li>
-        
-        <li><strong>High school</strong>:<a href="https://bosnjackagim.edu.ba">The First Bosniak Gymnasium</a>- <i> <acronym title="The First Bosniak Gymnasium">PBGS</acronym> </i></li>
-        <li><strong>Bachelor</strong>: <a href="https://bosnjackagim.edu.ba">International University of Sarajevo</a> <i> <acronym title="Internationl University of Sarajevo">IUS</acronym></i></li>
     </ol>
     </h3>
     
 </section>
 <section id="skills">
     <h1>Skills</h1>
+   
  <h3>
     <ul>
         <li>Programming</li>
@@ -74,6 +106,9 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.2633811703654!2d18.393550251301267!3d43.85036934757358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c91ec365adff%3A0xb3cfb909c234469c!2sGrbavi%C4%8Dka%2046%2C%20Sarajevo%2071000!5e0!3m2!1sen!2sba!4v1636133359487!5m2!1sen!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </h3>
 </section>
-
+<button type="button" id="moveRight">aa</button>
+                    
+                    
+                    
 </body>
 </html>
